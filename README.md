@@ -4,6 +4,7 @@ A React Native mobile app built with Expo and TypeScript that lets users discove
 
 ---
 ## Download live app through this link
+
 https://expo.dev/accounts/fekex/projects/BookExplorer/builds/63fb8641-8a5b-4fb7-86fc-84400c0eb34d
 
 
