@@ -1,4 +1,5 @@
 import { useRef, useCallback } from 'react';
+import ErrorMessage from '../components/ErrorMessage';
 import {
     View,
     Text,
@@ -184,11 +185,7 @@ export default function SearchScreen() {
             )}
 
             {/* ── ERROR ── */}
-            {error && (
-                <View style={styles.errorContainer}>
-                    <Text style={styles.errorText}>⚠️ {error}</Text>
-                </View>
-            )}
+            {error && <ErrorMessage message={error} onRetry={() => setQuery(query)} />}
 
             {/* ── EMPTY STATE ── */}
             {showEmpty && <EmptyState />}

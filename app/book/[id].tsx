@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import ErrorMessage from '../../components/ErrorMessage';
 import {
     View,
     Text,
@@ -132,11 +133,7 @@ export default function BookDetailScreen() {
     if (error) {
         return (
             <View style={styles.centeredContainer}>
-                <Text style={styles.errorIcon}>📚</Text>
-                <Text style={styles.errorText}>{error}</Text>
-                <TouchableOpacity style={styles.retryButton} onPress={() => router.back()}>
-                    <Text style={styles.retryButtonText}>Go Back</Text>
-                </TouchableOpacity>
+                <ErrorMessage message={error} onRetry={() => router.back()} />
             </View>
         );
     }
