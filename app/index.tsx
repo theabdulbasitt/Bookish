@@ -108,7 +108,7 @@ export default function HomeScreen() {
             >
                 {/* Left side — greeting and app name */}
                 <View>
-                    <Text style={styles.appName}>BookExplorer</Text>
+                    <Text style={styles.appName}>bookish</Text>
                 </View>
 
                 {/* Right side — two icon buttons */}
